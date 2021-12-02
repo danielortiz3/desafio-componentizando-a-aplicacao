@@ -2,7 +2,7 @@ import { Button } from '../components/Button';
 
 import '../styles/sidebar.scss';
 
-// Cria uma interface para tipar a props 
+// Interface para tipar a props 
 interface SideBarProps {
   genres: Array<{
     id: number;
@@ -12,9 +12,7 @@ interface SideBarProps {
   selectedGenreId: number;
   setSelectedGenreId: (id: number) => void;
 }
-// Declara a função com as props e declara as props passando a tipagem SideBarProps
 export function SideBar({ genres, selectedGenreId, setSelectedGenreId }: SideBarProps) {
-
   function handleClickButton(id: number) {
     setSelectedGenreId(id);
   }
